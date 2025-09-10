@@ -576,7 +576,6 @@ p {
   display: none;
 }
 
-
 .category-tab {
   background: none;
   border: none;
@@ -794,16 +793,40 @@ p {
   overflow: hidden;
   transition: max-height 0.3s ease;
 }
-
 .faq-answer p {
   margin: 10px 0 0;
   line-height: 1.6;
   color: white;
-  font-size: 15px;
+  font-size: 16px; /* Tamaño del texto principal */
+}
+
+.faq-answer ul {
+  list-style-type: disc; 
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.faq-answer li {
+  font-size: 14px; 
+  line-height: 1.5;
+  margin-bottom: 5px;
+  color: white;
+}
+
+.faq-answer strong {
+  font-weight: bold;
+  font-size: 16px; 
+}
+
+.faq-answer p:last-of-type {
+  font-size: 15px; 
+  font-style: italic; 
+  color: white; 
+  margin-top: 20px;
 }
 
 .faq-item.active .faq-answer {
-  max-height: 200px;
+  max-height: fit-content; 
 }
 
 @media (max-width: 768px) {
